@@ -1,3 +1,6 @@
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.functions._
+
 val df=spark.read.format("csv")
   .option("header", "true")
   .option("inferSchema", "true")
